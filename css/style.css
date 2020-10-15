@@ -1,5 +1,6 @@
 body{
-    font-family: 'Assistant', sans-serif;
+    /* font-family: 'Assistant', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 255, 255);
 }
 
@@ -115,11 +116,11 @@ header p {
 }
 .section-popular-content .section-popular-travel .card-travel img{
     object-fit: cover;
-    height: 170px;
+    height: auto;
     border-radius: .25rem;
 }
 .section-popular-content .section-popular-travel .card-travel .card-body{
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
 }
 
 .section-popular-content .section-popular-travel .card-travel h5 {
@@ -139,7 +140,11 @@ header p {
 }
 
 .section-popular-content .section-popular-travel .card-travel .travel-button .btn-travel-details:hover {
-  color: #fff;
+  /* color: #fff; */
+  color: #020202;
+  border: orangered solid 1.6px;
+  font-weight: bold;
+  background-color: white;
 }
 .artikel-info{
     margin-top: 60px;
@@ -177,11 +182,37 @@ header p {
     object-fit: cover;
     height: 170px;
 }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-testimonial:hover .image {
+  opacity: 0.3;
+}
+.thumbnail-artikel .text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.card-testimonial:hover .middle {
+  opacity: 1;
+}
+
+
 .section-testimonials-content .card-testimonial {
   border-radius: 11px;
   margin-bottom: 20px;
 }
-
+.section-testimonials-content .card-testimonial:hover{
+ box-shadow: 5px 10px #051334;
+}
 .section-testimonials-content .card-testimonial h3 {
   font-size: 22px;
 }
@@ -225,11 +256,52 @@ header p {
 
 .section-testimonials-content .btn-need-help {
   background-color: #F2F2F2;
-  color: #C3C3C3;
+  color: #8a8787;
 }
 
 .section-testimonials-content .btn-need-help:hover {
-  color: #C3C3C3;
+  color: #020202;
+  border: orangered solid 1.2px;
+  background-color: white;
+}
+.head-detail-forum {
+  background-color: #051334;
+}
+.head-detail-forum hr{
+  width: 30%;
+}
+.head-detail-forum p span{
+  color: #fda155;
+  font-family: 'Playfair Display', serif;
+}
+.info-detail {
+  margin-top: -180px;
+}
+.info-detail .card{
+  background: #fff;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.info-detail .card .card-body{
+  padding: 0px 5px 10px 5px;
+}
+.info-detail .card .card-header{
+  padding: 10px 0px;
+}
+.info-detail .card .card-header h6{
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  text-align: center;
+}
+.deskripsi-forum h3{
+  font-family: 'Playfair Display', serif;
+  color: #051334;
+  font-weight: bold;
+}
+.deskripsi-forum p{
+  font-size: 16px;
+    color: #525252;
+    line-height: 180%;
 }
 /* Desktop view */
 @media (min-width: 576px) { 
@@ -246,6 +318,11 @@ header p {
     font-size: 20px;
     font-weight: lighter;
     }
+    .section-popular-content .section-popular-travel .card-travel img{
+    object-fit: cover;
+    height: 170px;
+    border-radius: .25rem;
+}
     .artikel-info{
     margin-top: 60px;
     text-align: left;
